@@ -28,6 +28,13 @@ movie-booking/
 | Created `db/` folder | ✅ |
 | Created project document (`PROJECT_STEPS.md`) | ✅ |
 | Created skills for Database, Backend, Frontend sections | ✅ |
+| Tested Neon API connection | ✅ |
+| Tested Render API connection | ✅ |
+| Tested Vercel API connection | ✅ |
+| Tested GitHub API connection | ✅ |
+| Created GitHub repo `Prashant-90-so/movie-booking` | ✅ |
+| Created `.gitignore` (excludes tokens, node_modules, etc.) | ✅ |
+| Git initialized & pushed to GitHub | ✅ |
 
 ### Decisions Made
 - **Frontend**: Next.js with HTML/CSS wherever possible (minimal JS frameworks)
