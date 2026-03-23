@@ -42,11 +42,17 @@ movie-booking/
 - **Database**: Neon PostgreSQL (serverless)
 - **Deployment**: Vercel (frontend), Render (backend), Neon (DB)
 
----
+## 🔜 Step 2: Database Design (In Progress)
 
-## 🔜 Step 2: Database Design (Pending)
+| Item | Status |
+|------|--------|
+| Create Neon Project (`moviebooking`) | ✅ |
+| Retrieve Connection String | ✅ |
+| Design database schema | 🔜 |
+| Create migration scripts | 🔜 |
+| Seed sample data | 🔜 |
 
-*To be filled as we progress...*
+*Connection string is securely saved in the `tokens` file.*
 
 ---
 
