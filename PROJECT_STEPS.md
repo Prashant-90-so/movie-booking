@@ -48,23 +48,33 @@ movie-booking/
 |------|--------|
 | Create Neon Project (`moviebooking`) | ✅ |
 | Retrieve Connection String | ✅ |
-| Design database schema | 🔜 |
-| Create migration scripts | 🔜 |
+| Design database schema | ✅ |
+| Create migration scripts | ✅ |
+| Apply users schema | ✅ |
 | Seed sample data | 🔜 |
 
 *Connection string is securely saved in the `tokens` file.*
 
 ---
 
-## 🔜 Step 3: Backend Development (Pending)
+## 🔜 Step 3: Backend Development (In Progress)
 
-*To be filled as we progress...*
+| Item | Status |
+|------|--------|
+| Initialize FastAPI project | ✅ |
+| Create Auth Routes & Logic | ✅ |
+| Test DB Connection | ✅ |
+| Deploy to Render | 🔜 (Requires User Action) |
 
 ---
 
-## 🔜 Step 4: Frontend Development (Pending)
+## 🔜 Step 4: Frontend Development (In Progress)
 
-*To be filled as we progress...*
+| Item | Status |
+|------|--------|
+| Initialize Next.js project | ✅ |
+| Create Index Page with Sign In / Sign Up | ✅ |
+| Deploy to Vercel | 🔜 |
 
 ---
 
