@@ -8,14 +8,15 @@ export default function TheatersPage() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
-    // Check login status
-    const token = localStorage.getItem('token');
+    // Check login status with window guard
+    const token = typeof window !== 'undefined' ? localStorage.getItem('token') : null;
     setIsLoggedIn(!!token);
 
-    // Fetch theaters
+    // Fetch theaters from Render backend directly
     const fetchTheaters = async () => {
       try {
-        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/theaters/`);
+        const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'https://movie-booking-backend-nps5.onrender.com';
+        const response = await fetch(`${apiUrl}/theaters/`);
         if (response.ok) {
           const data = await response.json();
           setTheaters(data);

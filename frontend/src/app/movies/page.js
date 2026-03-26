@@ -10,11 +10,11 @@ export default function MoviesPage() {
   const [genre, setGenre] = useState('');
 
   useEffect(() => {
-    // Check login status
-    const token = localStorage.getItem('token');
+    // Check login status with window guard
+    const token = typeof window !== 'undefined' ? localStorage.getItem('token') : null;
     setIsLoggedIn(!!token);
 
-    // Fetch movies
+    // Fetch movies from Render backend directly
     const fetchMovies = async () => {
       setLoading(true);
       try {
@@ -22,7 +22,8 @@ export default function MoviesPage() {
         if (search) queryParams.append("q", search);
         if (genre) queryParams.append("genre", genre);
         
-        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/movies/?${queryParams.toString()}`);
+        const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'https://movie-booking-backend-nps5.onrender.com';
+        const response = await fetch(`${apiUrl}/movies/?${queryParams.toString()}`);
         if (response.ok) {
           const data = await response.json();
           setMovies(data);
