@@ -1,4 +1,4 @@
-# 🎬 Movie Booking - Project Document
+# 🎬 Karnataka Booking - Project Document
 
 > **Tech Stack**: Next.js (Vercel) · FastAPI (Render) · PostgreSQL (Neon)
 
@@ -63,7 +63,11 @@ movie-booking/
 |------|--------|
 | Initialize FastAPI project | ✅ |
 | Create Auth Routes & Logic | ✅ |
+| Create Index Page with Sign In / Sign Up | ✅ |
+| Create Premium Register Page | ✅ |
+| Create Premium Login Page | ✅ |
 | Test DB Connection | ✅ |
+| Seed sample data | 🔜 (Authentication issue) |
 | Deploy to Render | 🔜 (Requires User Action) |
 
 ---
@@ -74,7 +78,7 @@ movie-booking/
 |------|--------|
 | Initialize Next.js project | ✅ |
 | Create Index Page with Sign In / Sign Up | ✅ |
-| Deploy to Vercel | 🔜 |
+| Deploy to Vercel | ✅ |
 
 ---
 

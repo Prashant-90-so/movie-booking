@@ -13,7 +13,7 @@ payload = {
     "autoDeploy": "yes",
     "branch": "main",
     "envVars": [
-        {"key": "DATABASE_URL", "value": "postgresql+asyncpg://neondb_owner:nZ2G8QvpyOah@ep-summer-silence-44417958.us-east-2.aws.neon.tech/neondb?ssl=require"},
+        {"key": "DATABASE_URL", "value": "postgresql+asyncpg://neondb_owner:npg_oMBY8ywZG4bT@ep-rough-band-amlf6pvu-pooler.c-5.us-east-1.aws.neon.tech/neondb?ssl=require"},
         {"key": "SECRET_KEY", "generateValue": "true"},
         {"key": "ALGORITHM", "value": "HS256"},
         {"key": "ACCESS_TOKEN_EXPIRE_MINUTES", "value": "30"}

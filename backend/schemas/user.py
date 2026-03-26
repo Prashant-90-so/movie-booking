@@ -13,9 +13,10 @@ class UserResponse(BaseModel):
     id: int
     name: str
     email: str
+    is_admin: int = 0
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class Token(BaseModel):
     access_token: str

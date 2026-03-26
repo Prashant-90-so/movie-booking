@@ -7,7 +7,7 @@ load_dotenv()
 
 # We might receive a synchronous URL (postgresql://) or async (postgresql+asyncpg://)
 # If it's a synchronous url, convert it to asyncpg for async sqlalchemy
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql+asyncpg://neondb_owner:nZ2G8QvpyOah@ep-summer-silence-44417958.us-east-2.aws.neon.tech/neondb?ssl=require")
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql+asyncpg://neondb_owner:npg_oMBY8ywZG4bT@ep-rough-band-amlf6pvu-pooler.c-5.us-east-1.aws.neon.tech/neondb?ssl=require")
 
 if DATABASE_URL.startswith("postgres://"):
     DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql+asyncpg://", 1)
