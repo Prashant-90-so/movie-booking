@@ -20,12 +20,13 @@ export default function Home() {
     };
     window.addEventListener('scroll', handleScroll);
 
-    // Fetch movies and theaters
+    // Fetch movies and theaters from Render backend directly
     const fetchData = async () => {
       try {
+        const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'https://movie-booking-backend-nps5.onrender.com';
         const [resMovies, resTheaters] = await Promise.all([
-          fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'}/movies/`),
-          fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'}/theaters/`)
+          fetch(`${apiUrl}/movies/`),
+          fetch(`${apiUrl}/theaters/`)
         ]);
         
         if (resMovies.ok) {
